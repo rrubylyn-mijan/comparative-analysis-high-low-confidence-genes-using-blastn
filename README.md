@@ -47,7 +47,7 @@ grep '^>' WHEAT_REFERENCE_HC_cds.fasta | sed 's/^>//; s/ .*$//' \
   > subjectwheat-hc.ids
 
 # Wheat query genes present in wheat subject
-cut -f1 querywheat_to_subjectwheat-hc.present.tsv | sort -u > querywheat.present_in_cs-hc.ids
+cut -f1 querywheat_to_subjectwheat-hc.present.tsv | sort -u > querywheat.present_in_subjectwheat-hc.ids
 
 # CS genes present in Sumai3
 cut -f2 querywheat_to_subjectwheat-hc.present.tsv | sort -u > subjectwheat.present_in_querywheat-hc.ids
@@ -71,5 +71,6 @@ Maintainer:
 
 
 Ruby Mijan
+
 
 
