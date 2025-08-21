@@ -49,7 +49,7 @@ grep '^>' WHEAT_REFERENCE_HC_cds.fasta | sed 's/^>//; s/ .*$//' \
 # Wheat query genes present in wheat subject
 cut -f1 querywheat_to_subjectwheat-hc.present.tsv | sort -u > querywheat.present_in_subjectwheat-hc.ids
 
-# CS genes present in query wheat
+# Wheat subject genes present in query wheat
 cut -f2 querywheat_to_subjectwheat-hc.present.tsv | sort -u > subjectwheat.present_in_querywheat-hc.ids
 
 # Unique gene sets
@@ -71,6 +71,7 @@ Maintainer:
 
 
 Ruby Mijan
+
 
 
 
