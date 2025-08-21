@@ -34,7 +34,7 @@ awk 'BEGIN{OFS="\t"}{
   pid=$3; L=$4; ql=$5; sl=$6; e=$7;
   covq=100*L/ql; covs=100*L/sl;
   if (pid>=90 && covq>=70 && covs>=70 && e<=1e-20) print $0, covq, covs
-}' querywheat_to_subjectwheat.megablast.tsv > querywheat_to_subjectwheat-hc.present.tsv
+}' querywheat_to_subjectwheat-hc.megablast.tsv > querywheat_to_subjectwheat-hc.present.tsv
 ```
 
 ## 3. Extract Gene IDs
@@ -71,3 +71,4 @@ Maintainer:
 
 
 Ruby Mijan
+
